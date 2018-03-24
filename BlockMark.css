@@ -1,0 +1,69 @@
+/*------------------------
+Системное оформление
+-------------------------*/
+
+body{
+    padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+    position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before{
+    content: "";
+    position: absolute;
+    height: 24px;
+    padding: 2px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Courier New", monotype;
+    white-space: nowrap;
+}
+
+body > *::before {
+    top: 3px;
+    left: 3px;
+}
+body > * > *::before {
+    top: 3px;
+    left: 3px;
+}
+body > * > * > *::before {
+    top: 3px;
+    left: 3px;
+}
+
+body > * {
+    color: white;
+    background: green;
+}
+body > * > *{
+    color: white;
+    background: red;
+}
+body > * > * > *{
+    color: white;
+    background: yellow;
+}
+
+body > *{
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+}
+body > * > *{
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px red;
+}
+body > * > * > *{
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px yellow;
+}
+/*------------------------
+Системное оформление
+-------------------------*/
